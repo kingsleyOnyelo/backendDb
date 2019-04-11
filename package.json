@@ -1,0 +1,25 @@
+{
+  "name": "levelupdb",
+  "version": "1.0.0",
+  "description": "connecting to a sql db",
+  "main": "main.js",
+  "scripts": {
+    "test": "none",
+    "create-migration":"./node_modules/.bin/knex migrate:make --env development ",
+    "migrate:up":"./node_modules/.bin/knex migrate:latest --env development",
+    "migrate:down":"./node_modules/.bin/knex migrate:rollback --env development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "sql"
+  ],
+  "author": "kingsley",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.16.3",
+    "mysql": "^2.16.0"
+  }
+}
